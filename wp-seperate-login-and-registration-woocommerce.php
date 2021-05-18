@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Plugin Name:     Wp Seperate Login And Registration Woocommerce
+ * Plugin Name:     WP Seperate Login And Registration Woocommerce
  * Plugin URI:      https://www.strainovic-it.ch
  * Description:     Seperate the Woocommerce login and registration forms.
  * Author:          Goran Strainovic
  * Author URI:      https://www.strainovic-it.ch
  * Text Domain:     wp-seperate-login-and-registration-woocommerce
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Wp_Seperate_Login_And_Registration_Woocommerce
  */
