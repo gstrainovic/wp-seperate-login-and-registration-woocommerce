@@ -20,6 +20,17 @@
 // [wc_reg_form_silva] on the Register Page
 // [woocommerce_my_account] on the Login / My Account Page
 
+function custom_login_text() {
+    if( ! is_user_logged_in() ){
+        //Your link
+        $link = home_url( '/registrierung' );
+
+        // The displayed (output)
+        echo '<p>'. __("Noch kein Konto? <a href='$link'>Konto erstellen<a/>", "woocommerce").'</p>';
+    }
+}
+add_action( 'woocommerce_after_customer_login_form', 'custom_login_text' );
+
 
 add_shortcode('wc_reg_form_silva', 'silva_separate_registration_form');
 
@@ -195,5 +206,9 @@ function silva_separate_registration_form()
 
 
 <?php
+
+
+
+
     return ob_get_clean();
 }
